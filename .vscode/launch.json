@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Week01Code",
+            "request": "launch",
+            "mainClass": "In_Class.Week01Code",
+            "projectName": "CPSC 233_afe95d49"
+        },
+        {
+            "type": "java",
+            "name": "Constant",
+            "request": "launch",
+            "mainClass": "In_Tutorial.Constant",
+            "projectName": "CPSC 233_afe95d49"
+        },
+        {
+            "type": "java",
+            "name": "FirstProgram",
+            "request": "launch",
+            "mainClass": "In_Tutorial.FirstProgram",
+            "projectName": "CPSC 233_afe95d49"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "In_Tutorial.HelloWorld",
+            "projectName": "CPSC 233_afe95d49"
+        },
+        {
+            "type": "java",
+            "name": "Scanner1",
+            "request": "launch",
+            "mainClass": "In_Tutorial.Scanner1",
+            "projectName": "CPSC 233_afe95d49"
+        },
+        {
+            "type": "java",
+            "name": "Tutorial1",
+            "request": "launch",
+            "mainClass": "In_Tutorial.Tutorial1",
+            "projectName": "CPSC 233_afe95d49"
+        }
+    ]
+}

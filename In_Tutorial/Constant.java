@@ -1,4 +1,4 @@
-package In_Class;
+package In_Tutorial;
 
 public class Constant {
 

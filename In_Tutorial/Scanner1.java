@@ -1,4 +1,4 @@
-package In_Class;
+package In_Tutorial;
 import java.util.*;
 
 public class Scanner1 {
