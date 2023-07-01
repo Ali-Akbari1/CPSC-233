@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BasicJava1",
+            "request": "launch",
+            "mainClass": "Assignment1.BasicJava1",
+            "projectName": "CPSC-233_ab45050e"
+        },
+        {
+            "type": "java",
+            "name": "Assignment1",
+            "request": "launch",
+            "mainClass": "Assignment1.Assignment1",
+            "projectName": "CPSC-233_ab45050e"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
