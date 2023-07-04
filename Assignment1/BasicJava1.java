@@ -69,8 +69,8 @@ public class BasicJava1{
 
         }
         // Put characters from string into an array in reverse
-        for (int i1 = lenOfString-1; i1 >= 0; i1--){
-            reverseArray[j] = str1.charAt(i1);
+        for (int i = lenOfString-1; i >= 0; i--){
+            reverseArray[j] = str1.charAt(i);
             j+= 1;
         }
 
@@ -135,7 +135,7 @@ public class BasicJava1{
         Loops through the list and puts the ratings into a variable n
         n1 is the rating before the current index
         */
-        for (int i =0; i < movieList.length; i++){
+        for (int i = 0; i < movieList.length; i++){
             double n1 = 0.0;
             double n = ratingList[i]; 
 
