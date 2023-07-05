@@ -52,21 +52,21 @@ public class BasicJava1{
     // Ask about string 1 and 2 what to do and what it means
 
     // Method that takes in two arguments and checks if the string is a palindrome
-    public static boolean isPalindrome(String s1){
-        String str1 = s1.toLowerCase();
-        int lenOfString = str1.length();
+    public static boolean isPalindrome(String s){
+        String str = s.toLowerCase();
+        int lenOfString = str.length();
         char[] reverseArray = new char[lenOfString];
         char[] normalArray = new char[lenOfString];
 
         // Put characters from string into an array
         int j = 0;
         for (int i = 0; i < lenOfString; i++){
-            normalArray[i] = str1.charAt(i);
+            normalArray[i] = str.charAt(i);
 
         }
         // Put characters from string into an array in reverse
         for (int i = lenOfString-1; i >= 0; i--){
-            reverseArray[j] = str1.charAt(i);
+            reverseArray[j] = str.charAt(i);
             j+= 1;
         }
 
@@ -167,7 +167,7 @@ public class BasicJava1{
         System.out.println("Please type a temperature in celsius to convert to fahrenheit: ");
         double c = keyboard.nextDouble();
 
-        System.out.println("Please type two numbers to add all odd numbers from the start to the end");
+        System.out.println("Please type two numbers to add all odd numbers from the start not including the end");
         System.out.println("Starting Integer: ");
         int s = keyboard.nextInt();
         System.out.println("Ending Integer: ");
@@ -186,20 +186,32 @@ public class BasicJava1{
 
         int n = keyboard.nextInt();
 
-        String[] movieList = new String[n];
-        double[] ratingList = new double[n];
+        String[] highestMovieList = new String[n];
+        double[] highestRatingList = new double[n];
+        String[] lowestMovieList = new String[n];
+        double[] lowestRatingList = new double[n];
 
-        System.out.println("Enter the elements of the movie list array: ");  
+        System.out.println("Enter the elements of the highest rated movie list array: ");  
 
         for (int i = 0; i < n; i++){
-            movieList[i] = keyboard.next();
+            highestMovieList[i] = keyboard.next();
         }
 
-        System.out.println("Enter the elements of the rating list array: ");  
+        System.out.println("Enter the elements of the highest rated rating list array: ");  
         for (int i = 0; i < n; i++){
-            ratingList[i] = keyboard.nextDouble();
+            highestRatingList[i] = keyboard.nextDouble();
         }
 
+        System.out.println("Enter the elements of the lowest rated movie list array: ");  
+
+        for (int i = 0; i < n; i++){
+            lowestMovieList[i] = keyboard.next();
+        }
+
+        System.out.println("Enter the elements of the lowest rated rating list array: ");  
+        for (int i = 0; i < n; i++){
+            lowestRatingList[i] = keyboard.nextDouble();
+        }
 
         System.out.println("Your temperature in fahrenheit is: " + ConvertToFahrenheit(c));
 
@@ -209,10 +221,9 @@ public class BasicJava1{
 
         System.out.println("Is it a palindrome: " + isPalindrome(str1));
 
+        System.out.println(highestRatedMovie(highestMovieList, highestRatingList));
 
-        System.out.println(highestRatedMovie(movieList, ratingList));
-
-        System.out.println(lowestRatedMovie(movieList, ratingList));
+        System.out.println(lowestRatedMovie(lowestMovieList, lowestRatingList));
 
     }
 }
