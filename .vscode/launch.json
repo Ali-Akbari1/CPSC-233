@@ -9,6 +9,27 @@
             "name": "BasicJava1",
             "request": "launch",
             "mainClass": "Assignment1.BasicJava1",
+            "projectName": "CPSC 233_afe95d49"
+        },
+        {
+            "type": "java",
+            "name": "ArrayListDemo",
+            "request": "launch",
+            "mainClass": "In_Class.ArrayListDemo",
+            "projectName": "CPSC 233_afe95d49"
+        },
+        {
+            "type": "java",
+            "name": "Lecture07",
+            "request": "launch",
+            "mainClass": "In_Class.Lecture07",
+            "projectName": "CPSC 233_afe95d49"
+        },
+        {
+            "type": "java",
+            "name": "BasicJava1",
+            "request": "launch",
+            "mainClass": "Assignment1.BasicJava1",
             "projectName": "CPSC-233_ab45050e"
         },
         {

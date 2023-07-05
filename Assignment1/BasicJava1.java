@@ -1,6 +1,3 @@
-
-
-// Ask about this package and about import 
 package Assignment1;
 
 import java.util.*;
@@ -55,9 +52,8 @@ public class BasicJava1{
     // Ask about string 1 and 2 what to do and what it means
 
     // Method that takes in two arguments and checks if the string is a palindrome
-    public static boolean isPalindrome(String s1, String s2){
+    public static boolean isPalindrome(String s1){
         String str1 = s1.toLowerCase();
-        String str2 = s2.toLowerCase();
         int lenOfString = str1.length();
         char[] reverseArray = new char[lenOfString];
         char[] normalArray = new char[lenOfString];
@@ -87,14 +83,14 @@ public class BasicJava1{
     Method that takes in two list arguments
     movieList and ratingList and checks the highest rated movie
     */
-    public static String highestRatedMovie(String[] movieList, double[] ratingList){
+    public static String highestRatedMovie(String[]movieList, double[]ratingList){
         int index = 0;
 
         /* 
         Loops through the list and puts the ratings into a variable n
         n1 is the rating before the current index
         */
-        for (int i =0; i < movieList.length; i++){
+        for (int i = 0; i < movieList.length; i++){
             double n1 = 0.0;
             double n = ratingList[i];
             
@@ -166,16 +162,57 @@ public class BasicJava1{
 
     // Main function
     public static void main(String[] args){
-        System.out.println("Your temperature in fahrenheit is: " + ConvertToFahrenheit(2.0));
-        System.out.println("The sum of the odd numbers are: " + sumOddRange(1, 7));
-        System.out.println("The number of characters in your string are: " + countChar("Boolean", 'o'));
-        System.out.println("Is it a palindrome: " + isPalindrome("Kayak", "Kayak"));
-        System.out.println(highestRatedMovie
-        (new String[]{"The Witcher", "Avengers Endgame", "The Flash", "Spider Man", "Transformers"}, 
-        new double[]{8.2, 9.5, 6.3, 9.8, 4.9}));
-        System.out.println(lowestRatedMovie
-        (new String[]{"The Witcher", "Avengers Endgame", "The Flash", "Spider Man", "Transformers"}, 
-        new double[]{8.2, 9.5, 6.3, 9.8, 4.9}));
+
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Please type a temperature in celsius to convert to fahrenheit: ");
+        double c = keyboard.nextDouble();
+
+        System.out.println("Please type two numbers to add all odd numbers from the start to the end");
+        System.out.println("Starting Integer: ");
+        int s = keyboard.nextInt();
+        System.out.println("Ending Integer: ");
+        int e = keyboard.nextInt();
+
+        System.out.println("Please type a string and a character to check how many of that character are in that string");
+        System.out.println("String: ");
+        String str = keyboard.next();
+        System.out.println("Character: ");
+        char ch = keyboard.next().charAt(0);
+        
+        System.out.println("Please type a string to check if it is a palindrome: ");
+        String str1 = keyboard.next();
+
+        System.out.println("Please type the number of elements in your list");
+
+        int n = keyboard.nextInt();
+
+        String[] movieList = new String[n];
+        double[] ratingList = new double[n];
+
+        System.out.println("Enter the elements of the movie list array: ");  
+
+        for (int i = 0; i < n; i++){
+            movieList[i] = keyboard.next();
+        }
+
+        System.out.println("Enter the elements of the rating list array: ");  
+        for (int i = 0; i < n; i++){
+            ratingList[i] = keyboard.nextDouble();
+        }
+
+
+        System.out.println("Your temperature in fahrenheit is: " + ConvertToFahrenheit(c));
+
+        System.out.println("The sum of the odd numbers are: " + sumOddRange(s, e));
+
+        System.out.println("The number of characters in your string are: " + countChar(str, ch));
+
+        System.out.println("Is it a palindrome: " + isPalindrome(str1));
+
+
+        System.out.println(highestRatedMovie(movieList, ratingList));
+
+        System.out.println(lowestRatedMovie(movieList, ratingList));
 
     }
 }
