@@ -1,3 +1,4 @@
+// Ali Akbari, UCID: 30171539
 package Assignment1;
 
 import java.util.*;
@@ -10,7 +11,7 @@ public class BasicJava1{
     public static double ConvertToFahrenheit(double celsius){
         double fahrenheit;
         
-        fahrenheit = (celsius*1.8) + 32;
+        fahrenheit = (celsius * 1.8) + 32;
 
         return fahrenheit;
 
@@ -49,9 +50,7 @@ public class BasicJava1{
         return n;
     }
 
-    // Ask about string 1 and 2 what to do and what it means
-
-    // Method that takes in two arguments and checks if the string is a palindrome
+    // Method that takes in a argument and checks if the string is a palindrome
     public static boolean isPalindrome(String s){
         String str = s.toLowerCase();
         int lenOfString = str.length();

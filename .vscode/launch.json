@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "macIsGarbag",
+            "request": "launch",
+            "mainClass": "In_Class.macIsGarbag",
+            "projectName": "CPSC 233_afe95d49"
+        },
+        {
+            "type": "java",
             "name": "Pet",
             "request": "launch",
             "mainClass": "In_Class.Pet",
