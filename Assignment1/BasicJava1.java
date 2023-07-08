@@ -163,56 +163,61 @@ public class BasicJava1{
     // Main function
     public static void main(String[] args){
 
+        // Getting input from the user to pass to the methods
         Scanner keyboard = new Scanner(System.in);
+
+        // ConvertToFahrenheit method
         System.out.println("Please type a temperature in celsius to convert to fahrenheit: ");
         double c = keyboard.nextDouble();
 
+        // SumOddRange method
         System.out.println("Please type two numbers to add all odd numbers from the start not including the end");
         System.out.println("Starting Integer: ");
         int s = keyboard.nextInt();
         System.out.println("Ending Integer: ");
         int e = keyboard.nextInt();
 
+        // Countchar method
         System.out.println("Please type a string and a character to check how many of that character are in that string");
         System.out.println("String: ");
         String str = keyboard.next();
         System.out.println("Character: ");
         char ch = keyboard.next().charAt(0);
         
+        // IsPalindrome method
         System.out.println("Please type a string to check if it is a palindrome: ");
         String str1 = keyboard.next();
 
-        System.out.println("Please type the number of elements in your list");
+
+        // HighestRatedMovie and LowestRatedMovie method
+        System.out.println("Please type the number of elements in your movie and rating list array");
 
         int n = keyboard.nextInt();
+        String[] movieList = new String[n];
+        double[] ratingList = new double[n];
 
-        String[] highestMovieList = new String[n];
-        double[] highestRatingList = new double[n];
-        String[] lowestMovieList = new String[n];
-        double[] lowestRatingList = new double[n];
 
-        System.out.println("Enter the elements of the highest rated movie list array: ");  
+        System.out.println("Enter the elements of the movie list array: ");  
 
+        // For loop to to get the user input for movieList array
         for (int i = 0; i < n; i++){
-            highestMovieList[i] = keyboard.next();
+            movieList[i] = keyboard.next();
+            if (i != n-1){
+                System.out.println("Please enter the next movie: ");
+            }
         }
 
-        System.out.println("Enter the elements of the highest rated rating list array: ");  
+        System.out.println("Enter the elements of the rating list array: ");  
+
+        // For loops to to get the user input for ratingList array
         for (int i = 0; i < n; i++){
-            highestRatingList[i] = keyboard.nextDouble();
+            ratingList[i] = keyboard.nextDouble();
+            if (i != n-1){
+                System.out.println("Please enter the next rating: ");
+            }
         }
 
-        System.out.println("Enter the elements of the lowest rated movie list array: ");  
-
-        for (int i = 0; i < n; i++){
-            lowestMovieList[i] = keyboard.next();
-        }
-
-        System.out.println("Enter the elements of the lowest rated rating list array: ");  
-        for (int i = 0; i < n; i++){
-            lowestRatingList[i] = keyboard.nextDouble();
-        }
-
+        //All print statements to pass in user input variables to the methods
         System.out.println("Your temperature in fahrenheit is: " + ConvertToFahrenheit(c));
 
         System.out.println("The sum of the odd numbers are: " + sumOddRange(s, e));
@@ -221,9 +226,9 @@ public class BasicJava1{
 
         System.out.println("Is it a palindrome: " + isPalindrome(str1));
 
-        System.out.println(highestRatedMovie(highestMovieList, highestRatingList));
+        System.out.println(highestRatedMovie(movieList, ratingList));
 
-        System.out.println(lowestRatedMovie(lowestMovieList, lowestRatingList));
+        System.out.println(lowestRatedMovie(movieList, ratingList));
 
     }
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Pet",
+            "request": "launch",
+            "mainClass": "In_Class.Pet",
+            "projectName": "CPSC 233_afe95d49"
+        },
+        {
+            "type": "java",
             "name": "BasicJava1",
             "request": "launch",
             "mainClass": "Assignment1.BasicJava1",
