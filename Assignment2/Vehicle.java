@@ -3,7 +3,7 @@ package Assignment2;
 
 public class Vehicle{
 	
-
+	// Instance variables
 	private String make;
 	private String model;
     private int mileage;
@@ -15,7 +15,7 @@ public class Vehicle{
 		setMileage(InitialMileage);
 	}
 
-	// copy constructor
+	// Copy constructor
 	public Vehicle(Vehicle another){
 		this(another.make, another.model, another.mileage);
 	}
@@ -45,6 +45,9 @@ public class Vehicle{
 	}
 	
 	public int getMileage(){
+		if (mileage > 25 || mileage < 0){
+			return mileage = 0;
+		}
 		return mileage;
 
 	}
@@ -52,7 +55,7 @@ public class Vehicle{
 	public String getFuelEfficiencyCategory(){
 		mileage = getMileage();
 		if (mileage > 15){
-			return "Best!";
+			return "Best";
 		}
 		else if (mileage <= 15 && mileage >= 8){
 			return "Average";

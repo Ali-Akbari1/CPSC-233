@@ -9,6 +9,13 @@
             "name": "Vehicle",
             "request": "launch",
             "mainClass": "Assignment2.Vehicle",
+            "projectName": "CPSC-233_ab45050e"
+        },
+        {
+            "type": "java",
+            "name": "Vehicle",
+            "request": "launch",
+            "mainClass": "Assignment2.Vehicle",
             "projectName": "CPSC 233_afe95d49"
         },
         {
