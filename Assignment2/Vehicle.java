@@ -16,8 +16,8 @@ public class Vehicle{
 	}
 
 	// Copy constructor
-	public Vehicle(Vehicle another){
-		this(another.make, another.model, another.mileage);
+	public Vehicle(Vehicle vehicleToCopy){
+		this(vehicleToCopy.make, vehicleToCopy.model, vehicleToCopy.mileage);
 	}
 
 
