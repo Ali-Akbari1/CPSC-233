@@ -1,50 +1,150 @@
-package In_Class;
+/*
+The code is originally taken from the text book
+Java: An introdution to programming and problem solving 
+By Walter Savitch
+*/
 
-public class Pet {
 
-    // Fields or Data member or Instance variable or characteristics or attributes
+/**
+Class for basic pet data: name, age, and weight.
+*/
+public class Pet
+{
     private String name;
-    private int age;
+    private int age; //in years
+    private double weight; //in pounds
 
-    public Pet(){
-        this("No name yet", 0);
-
-    }
-    
-
-    public Pet(String initialName, int initialAge){
-        set(initialName, initialAge);
+    public Pet ()   // default constructor
+    {
+        name = "No name yet.";
+        age = 0;
+        weight = 0;
     }
 
-    public Pet(String initialName){
-        this(initialName,0); // call a constructor that takes a String and an Integer
+
+    public Pet (String initialName, int initialAge,
+            double initialWeight)                  
+    {
+        name = initialName;
+        if ((initialAge < 0) || (initialWeight < 0))
+        {
+            System.out.println ("Error: Negative age or weight.");
+            System.exit (0);
+        }
+        else
+        {
+            age = initialAge;
+            weight = initialWeight;
+        }
     }
 
-    public Pet(int initialAge){
-        this("No name yet", initialAge);
-    }
 
-    public void set(String newName, int newAge){
+    public void setPet (String newName, int newAge,
+            double newWeight)
+    {
         name = newName;
-        age = newAge;
-
+        if ((newAge < 0) || (newWeight < 0))
+        {
+            System.out.println ("Error: Negative age or weight.");
+            System.exit (0);
+        }
+        else
+        {
+            age = newAge;
+            weight = newWeight;
+        }
     }
 
-    public String getName(){
+
+    public Pet (String initialName)
+    {
+        name = initialName;
+        age = 0;
+        weight = 0;
+    }
+
+
+    public void setName (String newName)
+    {
+        name = newName; //age and weight are unchanged.
+    }
+
+
+    public Pet (int initialAge)
+    {
+        name = "No name yet.";
+        weight = 0;
+        if (initialAge < 0)
+        {
+            System.out.println ("Error: Negative age.");
+            System.exit (0);
+        }
+        else
+            age = initialAge;
+    }
+
+
+    public void setAge (int newAge)
+    {
+        if (newAge < 0)
+        {
+            System.out.println ("Error: Negative age.");
+            System.exit (0);
+        }
+        else
+            age = newAge;
+        //name and weight are unchanged.
+    }
+
+
+    public Pet (double initialWeight)
+    {
+        name = "No name yet";
+        age = 0;
+        if (initialWeight < 0)
+        {
+            System.out.println ("Error: Negative weight.");
+            System.exit (0);
+        }
+        else
+            weight = initialWeight;
+    }
+
+
+    public void setWeight (double newWeight)
+    {
+        if (newWeight < 0)
+        {
+            System.out.println ("Error: Negative weight.");
+            System.exit (0);
+        }
+        else
+            weight = newWeight; //name and age are unchanged.
+    }
+
+
+    public String getName ()
+    {
         return name;
     }
 
 
-    public int getAge(){
+    public int getAge ()
+    {
         return age;
     }
 
-    public static void main(String[] args){
-        Pet p1 = new Pet();
-        System.out.println(p1.getName());
-        System.out.println(p1.getAge());
-        Pet p2 = new Pet("Tommy");
-        System.out.println(p2.getName());
+
+    public double getWeight ()
+    {
+        return weight;
     }
 
+
+    public void writeOutput ()
+    {
+        System.out.println ("Name: " + name);
+        System.out.println ("Age: " + age + " years");
+        System.out.println ("Weight: " + weight + " pounds");
+    }
 }

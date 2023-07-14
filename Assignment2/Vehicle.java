@@ -1,3 +1,6 @@
+// Ali Akbari ID: 30171539
+
+
 package Assignment2;
 
 
@@ -20,7 +23,7 @@ public class Vehicle{
 		this(vehicleToCopy.make, vehicleToCopy.model, vehicleToCopy.mileage);
 	}
 
-
+	// Set Methods
 	public void setMake(String newMake){
 		make = newMake;
 
@@ -36,6 +39,7 @@ public class Vehicle{
 
 	}
 
+	// Get Methods
 	public String getMake(){
 		return make;
 	}
@@ -45,6 +49,7 @@ public class Vehicle{
 	}
 	
 	public int getMileage(){
+		// If the mileage is over 25, or less than 0 set mileage to 0
 		if (mileage > 25 || mileage < 0){
 			return mileage = 0;
 		}
@@ -52,6 +57,7 @@ public class Vehicle{
 
 	}
 
+	// Fuel Efficiency Method
 	public String getFuelEfficiencyCategory(){
 		mileage = getMileage();
 		if (mileage > 15){
@@ -94,10 +100,6 @@ public class Vehicle{
 		v3.setModel("Camry");
 		System.out.println("Testin copy constructor model " + v3.getModel()); // Camry
 		System.out.println("Testin copy constructor model " + v1.getModel()); // Corolla
-		
-		
-		
-		
 		
 		
 	}
