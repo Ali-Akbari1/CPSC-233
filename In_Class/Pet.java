@@ -8,6 +8,8 @@ By Walter Savitch
 /**
 Class for basic pet data: name, age, and weight.
 */
+
+package In_Class;
 public class Pet
 {
     private String name;
