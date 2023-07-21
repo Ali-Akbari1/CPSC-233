@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PolymorphismDemo",
+            "request": "launch",
+            "mainClass": "In_Class.PolymorphismDemo",
+            "projectName": "CPSC 233_afe95d49"
+        },
+        {
+            "type": "java",
+            "name": "InheritanceDemo",
+            "request": "launch",
+            "mainClass": "In_Class.InheritanceDemo",
+            "projectName": "CPSC 233_afe95d49"
+        },
+        {
+            "type": "java",
             "name": "HelloWorld",
             "request": "launch",
             "mainClass": "In_Tutorial.HelloWorld",

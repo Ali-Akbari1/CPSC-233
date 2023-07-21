@@ -45,16 +45,9 @@ public class Person {
         return name;
     }
 
-    public String getStudentGPA(){
-        gpa = getGPA();
+    //public String getStudentGPA(){
+       // gpa = getGPA();
          
-    }
+   // }
 
-
-    public class Boy extends Person{
-
-    }
-    public class Girl extends Person{
-
-    }
 }
