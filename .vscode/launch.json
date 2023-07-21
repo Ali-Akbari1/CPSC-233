@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Assignment3MainMethod",
+            "request": "launch",
+            "mainClass": "Assignment3.Assignment3MainMethod",
+            "projectName": "CPSC-233_ab45050e"
+        },
+        {
+            "type": "java",
             "name": "PolymorphismDemo",
             "request": "launch",
             "mainClass": "In_Class.PolymorphismDemo",
