@@ -1,6 +1,6 @@
 package Assignment3;
 
-public class Boy extends Person{
+public class Boy extends Person4{
     private String gender;
     private double shoeSize;
 
@@ -11,7 +11,7 @@ public class Boy extends Person{
     }
 
     // Parameterized Constructor
-    public Boy(double initialShoeSize, String initialGender, int initialHeight, int initialAge, String initialName, int intiialWeight){
+    public Boy(double initialShoeSize, String initialGender, double initialHeight, int initialAge, String initialName, double intiialWeight){
         super(initialHeight, initialAge,initialName, intiialWeight);
         setShoeSize(initialShoeSize);
         setGender(initialGender);
@@ -37,7 +37,7 @@ public class Boy extends Person{
         return gender;
     }
 
-    public boolean isSameAge(Person otherPerson){
+    public boolean isSameAge(Person4 otherPerson){
         return this.getAge() == otherPerson.getAge();
     }
 

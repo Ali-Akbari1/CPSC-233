@@ -1,23 +1,22 @@
 package Assignment3;
 
-public class Person {
+public class Person4 {
 
     //Instance variables
-   // private double gpa;
     private int age;
     private String name;
-    private int height;
+    private double height;
     private double weight; 
 
     // Default Constructor
-    public Person(){
+    public Person4(){
         
         age = 0;
         name = "No name yet ";
     }
 
     // Parameterized Constructor
-    public Person(int initialHeight, int initialAge, String initialName, int intiialWeight){
+    public Person4(double initialHeight, int initialAge, String initialName, double intiialWeight){
         setHeight(initialHeight);
         setWeight(intiialWeight);
         setAge(initialAge);
@@ -27,13 +26,13 @@ public class Person {
 
 
     // Set Methods
-    public void setHeight(int newHeight){
+    public void setHeight(double newHeight){
         height = newHeight;
     
 
     }
 
-    public void setWeight(int newWeight){
+    public void setWeight(double newWeight){
         weight = newWeight;
     
 
@@ -49,7 +48,7 @@ public class Person {
     }
 
     // Get Methods
-    public int getHeight(){
+    public double getHeight(){
         return height;
     
 
@@ -73,6 +72,7 @@ public class Person {
         height = getHeight();
         weight = getWeight();
 
+
         double bmi = 0.0;
 
         bmi = weight / (height * height);
@@ -80,7 +80,7 @@ public class Person {
         return bmi;
     }
 
-    public boolean isSameAge(Person otherPerson){
+    public boolean isSameAge(Person4 otherPerson){
         return this.age == otherPerson.getAge();
     }
 }

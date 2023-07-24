@@ -1,12 +1,12 @@
 package In_Class;
 
-public class Person {
+public class Person2 {
     private String name;
 
-    public Person(){
+    public Person2(){
         name = "No name initiated ";
     }
-    public Person(String initialName){
+    public Person2(String initialName){
         name = initialName;
 
     }
@@ -22,7 +22,7 @@ public class Person {
         System.out.println("Name: " + name);
     }
 
-    public boolean hasSameName(Person otherPerson){
+    public boolean hasSameName(Person2 otherPerson){
         return this.name.equalsIgnoreCase(otherPerson.name);
     }
 

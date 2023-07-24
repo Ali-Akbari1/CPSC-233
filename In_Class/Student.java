@@ -1,6 +1,6 @@
 package In_Class;
 
-public class Student extends Person {
+public class Student extends Person2 {
     private int studentNumber;
 
     public Student(){
