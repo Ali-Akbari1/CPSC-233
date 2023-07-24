@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Assignment3Main",
+            "request": "launch",
+            "mainClass": "Assignment3.Assignment3Main",
+            "projectName": "CPSC-233_ab45050e"
+        },
+        {
+            "type": "java",
             "name": "Assignment3MainMethod",
             "request": "launch",
             "mainClass": "Assignment3.Assignment3MainMethod",

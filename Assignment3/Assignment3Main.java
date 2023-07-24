@@ -1,10 +1,11 @@
 
 package Assignment3;
 
-
 public class Assignment3Main {
 
+    // Person Class
     public static class Person {
+
         // Instance variables
         private int age;
         private String name;
@@ -59,6 +60,7 @@ public class Assignment3Main {
             return name;
         }
 
+        // Method to calculate a persons BMI using height and weight
         public double calculateBMI() {
             height = getHeight();
             weight = getWeight();
@@ -70,11 +72,21 @@ public class Assignment3Main {
             return bmi;
         }
 
+        // Method to check if a person is the same age as another person
         public boolean isSameAge(Person otherPerson) {
             return this.age == otherPerson.getAge();
         }
+
+        // Method to display the objects
+        public void writeOutput(){
+            System.out.println("Name: " + name + ","+ " Age: " + age + "," + " Height: " + height + "m," + " Weight: " + weight + "kg" +
+                                " BMI of " + name + " is: " + calculateBMI());
+        }
+
     }
 
+
+    // Boy Class
     public static class Boy extends Person {
         private String gender;
         private double shoeSize;
@@ -110,11 +122,21 @@ public class Assignment3Main {
             return gender;
         }
 
+        // Method to check if a person is the same age as another person
         public boolean isSameAge(Person otherPerson) {
             return this.getAge() == otherPerson.getAge();
         }
+
+        // Method to display the objects
+        public void writeOutput(){
+            super.writeOutput();
+            System.out.println("Gender: " + gender + "," + " Shoe Size: " + shoeSize);
+
+        }
+
     }
 
+    // Girl Class
     public static class Girl extends Person {
         private String gender;
         private double shoeSize;
@@ -150,24 +172,44 @@ public class Assignment3Main {
             return gender;
         }
 
+        // Method to check if a person is the same age as another person
         public boolean isSameAge(Person otherPerson) {
             return this.getAge() == otherPerson.getAge();
         }
+
+        // Method to display the objects
+        public void writeOutput(){
+            super.writeOutput();
+            System.out.println("Gender: " + gender + "," + " Shoe Size: " + shoeSize );
+
+        }
     }
 
+
+    // Main Function
     public static void main(String[] args) {
+
+        // New list called people that will hold the objects
         Person[] people = new Person[4];
 
         people[0] = new Person(1.80, 18, "John Doe", 70.45);
         people[1] = new Girl(5.5, "Female", 1.53, 12, "Jane Doe", 41.67);
-        people[2] = new Boy(9.5, "male", 1.86, 25, "Ryan Nguyen", 72.3);
-        people[3] = new Boy(8.5, "male", 1.74, 18, "Ali Muhammad", 91.7);
+        people[2] = new Boy(9.5, "Male", 1.86, 25, "Ryan Nguyen", 72.3);
+        people[3] = new Boy(8.5, "Male", 1.74, 18, "Ali Muhammad", 91.7);
 
+
+        // Loop through the list and display the objects
+        for (Person p: people){
+            p.writeOutput();
+            System.out.println();
+        }
+
+
+        // Same age checker
         System.out.println("Is " + people[0].getName() + " the same age as " + people[1].getName() + " " + people[0].isSameAge(people[1]));
         System.out.println("Is " + people[0].getName() + " the same age as " + people[3].getName() + " " + people[0].isSameAge(people[3]));
         System.out.println("Is " + people[1].getName() + " the same age as " + people[2].getName() + " " + people[1].isSameAge(people[2]));
         System.out.println("Is " + people[2].getName() + " the same age as " + people[3].getName() + " " + people[2].isSameAge(people[3]));
 
-        System.out.println("The BMI of " + people[0].getName() + " " + people[0].calculateBMI());
     }
 }
