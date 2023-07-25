@@ -16,14 +16,16 @@ public class Assignment3Main {
         public Person() {
             age = 0;
             name = "No name yet ";
+            height = 0.0;
+            weight = 0.0;
         }
 
         // Parameterized Constructor
         public Person(double initialHeight, int initialAge, String initialName, double initialWeight) {
-            setHeight(initialHeight);
-            setWeight(initialWeight);
-            setAge(initialAge);
-            setName(initialName);
+            height = initialHeight;
+            weight = initialWeight;
+            age = initialAge;
+            name = initialName;
         }
 
         // Set Methods
@@ -83,6 +85,12 @@ public class Assignment3Main {
                                 " BMI of " + name + " is: " + calculateBMI());
         }
 
+
+        // Method to show method overriding
+        public void introduceYourself(){
+            System.out.println("I am just a person, I don't know what chromosomes I have yet");
+        }
+
     }
 
 
@@ -93,6 +101,7 @@ public class Assignment3Main {
 
         // Default Constructor
         public Boy() {
+            super();
             shoeSize = 0;
             gender = "Male";
         }
@@ -100,8 +109,8 @@ public class Assignment3Main {
         // Parameterized Constructor
         public Boy(double initialShoeSize, String initialGender, double initialHeight, int initialAge, String initialName, double initialWeight) {
             super(initialHeight, initialAge, initialName, initialWeight);
-            setShoeSize(initialShoeSize);
-            setGender(initialGender);
+            shoeSize = initialShoeSize;
+            gender = initialGender;
         }
 
         // Set methods
@@ -134,6 +143,11 @@ public class Assignment3Main {
 
         }
 
+        // Method to show method overriding
+        public void introduceYourself(){
+            System.out.println("Hey I have an XY chromosome");
+        }
+
     }
 
     // Girl Class
@@ -143,6 +157,7 @@ public class Assignment3Main {
 
         // Default Constructor
         public Girl() {
+            super();
             shoeSize = 0;
             gender = "Female";
         }
@@ -150,8 +165,8 @@ public class Assignment3Main {
         // Parameterized Constructor
         public Girl(double initialShoeSize, String initialGender, double initialHeight, int initialAge, String initialName, double initialWeight) {
             super(initialHeight, initialAge, initialName, initialWeight);
-            setShoeSize(initialShoeSize);
-            setGender(initialGender);
+            shoeSize = initialShoeSize;
+            gender = initialGender;
         }
 
         // Set methods
@@ -183,6 +198,11 @@ public class Assignment3Main {
             System.out.println("Gender: " + gender + "," + " Shoe Size: " + shoeSize );
 
         }
+
+        // Method to show method overriding
+        public void introduceYourself(){
+            System.out.println("Hey I have an XX chromosome");
+        }
     }
 
 
@@ -200,6 +220,7 @@ public class Assignment3Main {
 
         // Loop through the list and display the objects
         for (Person p: people){
+            p.introduceYourself();
             p.writeOutput();
             System.out.println();
         }
