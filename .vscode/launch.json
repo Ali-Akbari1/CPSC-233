@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NamesSorting",
+            "request": "launch",
+            "mainClass": "Assignment4.NamesSorting",
+            "projectName": "CPSC-233_ab45050e"
+        },
+        {
+            "type": "java",
+            "name": "PurchaseMade",
+            "request": "launch",
+            "mainClass": "Assignment4.PurchaseMade",
+            "projectName": "CPSC-233_ab45050e"
+        },
+        {
+            "type": "java",
+            "name": "TextFileOutputDemo",
+            "request": "launch",
+            "mainClass": "In_Class.TextFileOutputDemo",
+            "projectName": "CPSC-233_ab45050e"
+        },
+        {
+            "type": "java",
+            "name": "TextFileInputDemo",
+            "request": "launch",
+            "mainClass": "In_Class.TextFileInputDemo",
+            "projectName": "CPSC-233_ab45050e"
+        },
+        {
+            "type": "java",
             "name": "Assignment3Main",
             "request": "launch",
             "mainClass": "Assignment3.Assignment3Main",

@@ -1,1 +1,2 @@
-public 
+Item Name: a price: 200000.0 quantity: 3 current total cost: 600000.0
+Total Cost: 600000.0

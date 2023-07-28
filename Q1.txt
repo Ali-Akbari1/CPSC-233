@@ -1,0 +1,8 @@
+Item Name: a price: 100.0 quantity: 2 current total cost: 200.0
+200.0
+Item Name: a price: 125.0 quantity: 4 current total cost: 500.0
+Item Name: b price: 500.0 quantity: 3 current total cost: 2000.0
+Item Name: c price: 1000.0 quantity: 1 current total cost: 3000.0
+Total Cost: 3000.0
+Item Name: ali price: 350.0 quantity: 2 current total cost: 700.0
+Total Cost: 700.0
