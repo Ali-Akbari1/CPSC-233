@@ -22,13 +22,7 @@ public class NamesSorting {
             System.exit(0);
 
         }
-       /* catch(IOException e)
-		
-		{
-			System.out.println("Problem Reading File");
-            System.exit(0);
-		}
-*/      
+  
         int count = 0;
         while (inputStream.hasNext())
         {

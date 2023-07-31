@@ -20,18 +20,10 @@ public class PurchaseMade{
             System.exit(0);
 
         }
-       /* catch(IOException e)
-		
-		{
-			System.out.println("Problem Reading File");
-            System.exit(0);
-		}
- */
 
         String itemName = "";
         double price;
         int quantity;
-        double totalCost = 0.0; 
         double currentCost = 0.0;
 
         boolean running = true;
@@ -53,8 +45,7 @@ public class PurchaseMade{
             quantity = keyboard.nextInt();
 
 
-            currentCost += quantity*price;
-            //totalCost += currentCost; 
+            currentCost += quantity*price; 
             System.out.println(itemName + " price: " + price + " quantity: " + quantity + " current total cost: " + currentCost);
             outputStream.println("Item Name: " + itemName + " price: " + price + " quantity: " + quantity + " current total cost: " + currentCost);
         }
