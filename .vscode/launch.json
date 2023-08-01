@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RecursionAssignment",
+            "request": "launch",
+            "mainClass": "Assignment5.RecursionAssignment",
+            "projectName": "CPSC-233_ab45050e"
+        },
+        {
+            "type": "java",
             "name": "NamesSorting",
             "request": "launch",
             "mainClass": "Assignment4.NamesSorting",
