@@ -6,3 +6,5 @@ Item Name: c price: 1000.0 quantity: 1 current total cost: 3000.0
 Total Cost: 3000.0
 Item Name: ali price: 350.0 quantity: 2 current total cost: 700.0
 Total Cost: 700.0
+Item Name: lol price: 9.0 quantity: 9 current total cost: 81.0
+Total Cost: 81.0

@@ -1,2 +1,9 @@
-Item Name: a price: 200000.0 quantity: 3 current total cost: 600000.0
-Total Cost: 600000.0
+Item Name: Apple price: 2.5 quantity: 4 current total cost: 10.0
+Total Cost: 10.0
+Item Name: Banana price: 5.0 quantity: 4 current total cost: 20.0
+Item Name: TV price: 1499.0 quantity: 1 current total cost: 1519.0
+Item Name: Chair price: 20.0 quantity: 4 current total cost: 1599.0
+Total Cost: 1599.0
+Item Name: Carrot price: 1.5 quantity: 10 current total cost: 15.0
+Item Name: Laptop price: 2200.0 quantity: 2 current total cost: 4415.0
+Total Cost: 4415.0

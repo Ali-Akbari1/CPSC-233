@@ -1,7 +1,5 @@
 package Assignment5;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class RecursionAssignment {
 
@@ -11,13 +9,13 @@ public class RecursionAssignment {
             return 0;
         }
 
-        int num;
+        
 
-        num = n % 10;
+        n = n % 10;
 
         System.out.println(n);
         
-        return n+(addDigits(num/10));
+        return n+(addDigits(n/10));
     }
 
     public static void main(String[] args){
