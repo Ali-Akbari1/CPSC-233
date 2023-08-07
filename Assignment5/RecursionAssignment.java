@@ -91,7 +91,7 @@ public class RecursionAssignment {
 
          // Base case if the string has length of 0
         if (s.length() == 0) return "";
-
+        
         /* 
         Call the function again
         And pass in everything after the first element
